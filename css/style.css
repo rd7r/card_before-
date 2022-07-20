@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	margin: 0 auto;
+}
+img{
+	width: 300px;
+	height: 250px;
+}
+.imagen{
+	width: 300px;
+	height: 250px;
+	margin-top: 10%;
+	position: relative;
+	-webkit-transition:all 0.4s;
+	overflow: hidden;
+	color: #fff;
+}
+
+.contenido{
+	position: absolute;
+	top: 40%;
+	left: 350px;
+	padding: 0 5% 0 5%; 
+}
+
+.imagen:hover{
+	background: url(../img/paisaje.jpg);
+	position: relative;
+	width: 100%;
+}
+
+li{
+	display: inline;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	margin: 0px;
+	transition: all 0.5s ease 0.5s;
+}
+a{
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+}
+.fa{
+	padding: 15px 20px;
+	background: #6d84b4;
+}
+.fa:hover{
+	position: relative;
+	top: -5px;
+}
+.t{
+	padding: 15px 20px;
+	background: #00acee;
+}
+.t:hover{
+	position: relative;
+	top: -5px;
+}
+.g{
+	padding: 15px;
+	background: #db4a39;
+}
+.g:hover{
+	position: relative;
+	top: -5px;
+}
+.in{
+	padding: 15px;
+	background: #0E76a8;
+}
+.in:hover{
+	position: relative;
+	top: -5px;
+}
+.imagen:hover li{
+	top:-40px;
+}
+
+.imagen:before{
+	content: "Presentacion Card";
+	font-size: 20px;
+	text-align: center;
+	top: 40px;
+	left: -240px;
+	color: #000;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	-webkit-transition: all 0.4s ease 0.4s;
+}
+.imagen:hover:before{
+	left: 10%;
+	color: #fff;
+}
+
+.imagen:after{
+	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus qui, quas possimus officiis dolore aspernatur labore, dignissimos.";
+	position:absolute;
+	top: 50%;
+	transform: translateY(-40%);
+	left: -260px;
+	width: 240px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-in 0.4s;
+}
+.imagen:hover:after{
+	left: 34px;
+	text-align: center;
+	color: #fff;
+}
